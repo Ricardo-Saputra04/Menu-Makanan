@@ -26,7 +26,7 @@ class MakananController extends Controller
             'makan_siang' => 'required',
             'makan_malam' => 'required',
         ]);
-        Makanan::create($request->all());
+        makanan::create($request->all());
         return redirect()->route('makanan.index');
     }
 

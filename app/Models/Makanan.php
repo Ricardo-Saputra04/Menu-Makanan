@@ -9,5 +9,6 @@ class Makanan extends Model
 {
     use HasFactory;
 
-    protected $table = 'makanans'; // <- tambahkan baris ini
+    protected $table = 'makanans'; 
+    protected $fillable =['hari','sarapan','makan_siang','makan_malam'];
 }
